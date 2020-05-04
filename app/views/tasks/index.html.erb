@@ -1,0 +1,4 @@
+<% @tasks.each do |task| %>
+  <p><%= task.type %></p>
+  <p><%= time_ago_in_words(task.created_at) %></p>
+<% end %>
